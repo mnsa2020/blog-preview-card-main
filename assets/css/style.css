@@ -1,16 +1,6 @@
 /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-
-:root {
-  --Yellow: hsl(47, 88%, 63%);
-
-  --White: hsl(0, 0%, 100%);
-  --Grey: hsl(0, 0%, 50%);
-  --Black: hsl(0, 0%, 7%);
-  --primary-font: "Figtree", sans-serif;
-}
 /* Variables */
-
 /* Global */
 * {
   padding: 0;
@@ -20,72 +10,72 @@
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* Global */
 
+/* Global */
 body {
   position: relative;
   height: 100vh;
-  font-family: var(--primary-font);
+  font-family: "Figtree", sans-serif;
   font-size: 16px;
 }
-.container {
-  background-color: var(--Yellow);
+body .container {
+  background-color: hsl(47, 88%, 63%);
   height: 100%;
 }
-.card {
+body .container .card {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--White);
+  background: hsl(0, 0%, 100%);
   padding: 20px;
   border-radius: 20px;
   width: 380px;
   height: 520px;
-  box-shadow: 15px 15px var(--Black);
+  box-shadow: 15px 15px hsl(0, 0%, 7%);
 }
-.img img.article {
+body .container .card .img img.article {
   border-radius: 10px;
 }
-button {
-  background: var(--Yellow);
+body .container .card button {
+  background: hsl(47, 88%, 63%);
   padding: 5px 12px;
   margin-top: 20px;
   border-radius: 5px;
   font-weight: 600;
 }
-span.title {
+body .container .card span.title {
   display: block;
   margin-top: 10px;
   font-size: 14px;
 }
-h2 {
-  color: var(--Black);
+body .container .card h2 {
+  color: hsl(0, 0%, 7%);
   margin-top: 18px;
   font-weight: 800;
   cursor: pointer;
 }
-h2:hover {
-  color: var(--Yellow);
+body .container .card h2:hover {
+  color: hsl(47, 88%, 63%);
 }
-p {
+body .container .card p {
   margin-top: 20px;
   line-height: 1.5;
 }
-.author {
+body .container .card .author {
   display: flex;
   align-items: center;
   margin-top: 20px;
 }
-.author img {
+body .container .card .author img {
   width: 32px;
   margin-right: 12px;
 }
-.author span {
+body .container .card .author span.name {
   font-size: 14px;
   font-weight: 600;
 }
-.attribution {
+body .container .attribution {
   position: absolute;
   bottom: 1em;
   left: 50%;
@@ -93,6 +83,6 @@ p {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+body .container .attribution a {
   color: hsl(228, 45%, 44%);
-}
+}/*# sourceMappingURL=style.css.map */
